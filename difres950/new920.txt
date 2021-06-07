@@ -1,0 +1,31 @@
+New in file *.lng:
+==================
+1394="From active panel (source)"
+1395="From target"
+1396="Invalid input!"
+1397="English in Titles"
+1398="Search text too long!"
+6034="&Client Certificate:"
+
+New in file *.inc file (optional)
+=================================
+below 907:
+911="Make directory in target panel"
+
+Notes:
+======
+String 1394 and 1395 appear in Files - Change attributes dialog.
+The string 5043="Load from &file under cursor" is moved from a
+button to the title of the groupbox. Please make sure that it works
+with the two new strings. You may modify 5043 a bit if it doesn't,
+but please do not remove the hotkey!
+
+String 1396 is displayed in the "Change attributes" dialog when
+entering an invalid date or time.
+
+String 1397 is displayed in the multi-rename tool, Upper-/lowercase section.
+
+String 1398 is displayed as an error in Lister when trying to find a
+text longer than 127 characters in Unicode mode.
+
+String 6034 is shown in the FTP details dialog: Ctrl+F - Edit - second tab.

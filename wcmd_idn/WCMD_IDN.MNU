@@ -1,0 +1,142 @@
+POPUP "&Berkas"
+  MENUITEM "[&C] Ubah Atribut...", cm_SetAttrib
+  MENUITEM "[&P] Padatkan...\tAlt+F5", cm_PackFiles
+  MENUITEM "[&U] Ekstrak Berkas Spesifik...\tAlt+F9", cm_UnpackFiles
+  MENUITEM "[&I] Tes Arsip\tAlt+Shift+F9",518
+  MENUITEM "[&Y] Bandingkan Konten...", 2022
+  MENUITEM "[&A] Asosiasikan Dengan...", cm_associate
+  MENUITEM "[&L] Asosiasi Internal (Hanya Total Commander)...", 519
+  MENUITEM "[&X] Properti...\tAlt+Enter", cm_versioninfo
+  MENUITEM "[&O] Hitung Ruang Ditempati...\tCtrl+L", cm_GetFileSpace
+  MENUITEM "[&R] Pengubah Nama Massal...\tCtrl+M", 2400
+  MENUITEM "[&N] Edit Komentar...\tCtrl+Z", 2700
+  POPUP "[&T] Cetak"
+    MENUITEM "[&L] List Berkas...", 2027
+    MENUITEM "[&S] List Berkas Dengan Subdir...", 2028
+    MENUITEM "[&T] Konten Berkas\tCtrl+F9", cm_PrintFile
+  END_POPUP
+  MENUITEM SEPARATOR
+  MENUITEM "[&S] Belah Berkas...", 560
+  MENUITEM "[&M] Gabungkan Berkas...", 561
+  MENUITEM "[&E] Sandikan Berkas (MIME,UUE,XXE)...", 562
+  MENUITEM "[&D] Baca Sandi Berkas (MIME,UUE,XXE,BinHex)...", 563
+  MENUITEM "[&H] Buat Berkas Checksum (CRC32, MD5, SHA1)...", 564
+  MENUITEM "[&V] Verifikasi Checksum (dari berkas checksum)", 565
+  MENUITEM SEPARATOR
+  MENUITEM "[&Q] Keluar\tAlt+F4", 24340
+END_POPUP
+
+POPUP "&Tanda"
+  MENUITEM "[&G] Pilih Grup...\tNum +", cm_spreadselection
+  MENUITEM "[&U] Batal Memilih Grup...\tNum -", cm_shrinkselection
+  MENUITEM "[&A] Pilih Semua\tCtrl Num +", cm_selectall
+  MENUITEM "[&N] Batal Memilih Semua\tCtrl Num -", cm_Clearall
+  MENUITEM "[&I] Balikkan Pilihan\tNum *", cm_ExchangeSelection
+  MENUITEM "[&X] Pilih Semua Dengan Ekstensi Sama\tAlt Num +",527
+  MENUITEM SEPARATOR
+  MENUITEM "[&S] Simpan Pilihan", 530
+  MENUITEM "[&R] Pulihkan Pilihan\tNum /", 529
+  MENUITEM "[&V] Simpan Pilihan Ke Berkas", 2031
+  MENUITEM "[&L] Muat Pilihan Dari Berkas", 2032
+  MENUITEM SEPARATOR
+  MENUITEM "[&Y] Salin Nama Terpilih Ke Clipboard", 2017
+  MENUITEM "[&P] Salin Nama Dengan Jalan Ke Clipboard", 2018
+  MENUITEM "[&D] Salin Ke Clipboard Dengan Semua Rincian", 2036
+  MENUITEM "[&B] Salin Ke Clipboard Dengan Jalan+Rincian", 2037
+  MENUITEM SEPARATOR
+  MENUITEM "[&C] Bandingkan Direktori\tShift+F2", cm_CompareDirs
+  MENUITEM "[&M] Tandai Terbaru, Sembunyikan Berkas Sama", cm_DirMatch
+END_POPUP
+
+POPUP "&Perintah"
+  MENUITEM "[&T] Pohon Direktori...\tAlt+F10", cm_CDtree
+  MENUITEM "[&S] Cari...\tAlt+F7", cm_searchfor
+  MENUITEM "[&P] Cari Dalam Proses Terpisah...\tAlt+Shift+F7", 545
+  MENUITEM "[&V] Label Volume...", cm_VolumeId
+  MENUITEM "[&I] Informasi Sistem...", cm_sysinfo
+  MENUITEM "[&Y] Sinkronkan Direktori...", 2020
+  MENUITEM "[&H] List Direktori Favorit\tCtrl+D", 526
+  MENUITEM "[&B] Kembali\tAlt+Left Arrow", 570
+  MENUITEM SEPARATOR
+  MENUITEM "[&D] Buka Jendela Baris Perintah", cm_ExecuteDOS
+  MENUITEM SEPARATOR
+  MENUITEM "[&A] Tampilan Cabang (Dengan Subdir)\tCtrl+B", 2026
+  MENUITEM "[&O] Buka Folder Desktop", 2121
+  MENUITEM "[&M] Manajer Transfer...",559
+  MENUITEM SEPARATOR
+  MENUITEM "[&K] Sumber<->Target\tCtrl+U", cm_exchange
+  MENUITEM "[&L] Target=Sumber", cm_matchsrc
+END_POPUP
+
+POPUP "&Jaringan"
+  MENUITEM "[&N] Koneksi Jaringan...", cm_NetConnect
+  MENUITEM "[&D] Lepaskan Drive Jaringan...", cm_NetDisconnect
+  MENUITEM "[&C] Bagikan Direktori Saat Ini...", cm_NetShareDir
+  MENUITEM "[&U] Batal Membagikan Direktori...", cm_NetUnshareDir
+  MENUITEM "[&A] Tampilkan Bagian Admin", 2204
+  MENUITEM SEPARATOR
+  MENUITEM "[&F] Koneksi FTP...\tCtrl+F", 550
+  MENUITEM "[&P] Koneksi Baru FTP...\tCtrl+N", 551
+  MENUITEM "[&E] Putuskan FTP\tCtrl+Shift+F", 552
+  MENUITEM "[&W] Tampilkan Berkas FTP Tersembunyi", 553
+  MENUITEM "[&L] Unduh Dari List Via FTP...", 558
+  MENUITEM "[&O] Koneksi PORT Ke PC Lain...", 2300
+END_POPUP
+
+POPUP "Ta&mpilan"
+  MENUITEM "[&B] Singkat\tCtrl+F1", cm_srcshort
+  MENUITEM "[&F] Lengkap\tCtrl+F2", cm_srclong
+  MENUITEM "[&M] Komentar\tCtrl+Shift+F2", 300
+  MENUITEM "[&D] Modus Kolom Buatan\tShift+F1", 270
+  MENUITEM "Modus Tampilan Buatan", 333
+  MENUITEM "[&T] Pohon\tCtrl+F8", cm_srcTree
+  POPUP "Pohon Terpisah\tCtrl+Shift+F8"
+    MENUITEM "&0 (Tidak Satupun)", 3200
+    MENUITEM "&1 (Satu Untuk Kedua Panel)", 3201
+    MENUITEM "&2 (Dua, Satu Untuk Tiap Panel)", 3202
+  END_POPUP
+  MENUITEM "[&L] Tampilan Miniatur\tCtrl+Shift+F1", 269
+  MENUITEM "[&Q] Panel Tampilan Cepat\tCtrl+Q",304
+  MENUITEM "[&V] Susunan Vertikal", 305
+  MENUITEM "[&W] Tab Folder Baru\tCtrl+T", 3001
+  MENUITEM SEPARATOR
+  MENUITEM "[&A] Semua Berkas\tCtrl+F10", cm_srcallfiles
+  MENUITEM "[&P] Program\tCtrl+F11", cm_srcexecs
+  MENUITEM "*.*", cm_srcuserspec
+  MENUITEM "[&C] Buatan...\tCtrl+F12", cm_srcuserdef
+  MENUITEM "[&O] Hanya Berkas Terpilih", 2023
+  MENUITEM SEPARATOR
+  MENUITEM "[&N] Nama\tCtrl+F3", cm_srcbyname
+  MENUITEM "[&X] Ekstensi\tCtrl+F4", cm_srcbyext
+  MENUITEM "[&I] Waktu\tCtrl+F5", cm_srcbydatetime
+  MENUITEM "[&S] Ukuran\tCtrl+F6", cm_srcbysize
+  MENUITEM "[&U] Tidak Disortir\tCtrl+F7", cm_srcunsorted
+  MENUITEM SEPARATOR
+  MENUITEM "[&R] Susunan Terbalik", cm_srcnegorder
+  MENUITEM SEPARATOR
+  MENUITEM "[&E] Baca Ulang Sumber\tCtrl+R", cm_rereadsource
+END_POPUP
+
+POPUP "&Konfigurasi"
+  MENUITEM "[&O] Pengaturan...", cm_config
+  MENUITEM "[&B] Bar Tombol...", cm_ButtonConfig
+  MENUITEM "Bar Tombol &2 (Vertikal)...", 583
+  MENUITEM "[&C] Ubah Berkas Setting Langsung...", 581
+  MENUITEM "[&D] Gelap<->Normal", 2950
+  MENUITEM "[&S] Simpan Posisi", cm_configSavepos
+  MENUITEM "[&V] Simpan Setting", 580
+END_POPUP
+
+STARTMENU
+
+HELP_BREAK
+
+POPUP "Bantua&n"
+  MENUITEM "[&I] Indeks\tF1", cm_HelpIndex
+  MENUITEM "[&K] Keyboard", cm_keyboard
+  MENUITEM "[&R] Info Registrasi", cm_register
+  MENUITEM "[&V] Kunjungi Situs Totalcmd", 640
+  MENUITEM "&Periksa Pembaruan Sekarang", 650
+  MENUITEM SEPARATOR
+  MENUITEM "[&A] Tentang Total Commander...", cm_About
+END_POPUP

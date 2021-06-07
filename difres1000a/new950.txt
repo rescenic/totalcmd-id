@@ -1,0 +1,133 @@
+General changes:
+1. Look for translations like Gray-"+" and replace them with Num-"+" (numeric keypad).
+2. In lines 1760 and 1765, append a colon ":" to the end of the string
+
+Main menu, 3rd-last entry in "Configuration" menu:
+  MENUITEM "&Dark<>Normal", 2950
+
+Configuration - Options - Colors: Set color for underlined search result:
+2051="Search results (underline)"
+Files - Create checksum files:
+2052="&Always use UTF-8 in names"
+2053="&Unix format: line breaks, '/' in paths"
+Lister menu - Options - Configure - second tab "Multimedia" - Define view method by file type:
+2054="Lister: view methods by file type"
+2055="Please choose default view modes:"
+Press F5 (copy) when the left and right panel show an FTP connection each
+2056="Copy via local PC (slow)"
+Press F5 (copy) for copying locally, then the button "+ F7":
+2057="Position"
+String shown to the left of "Name" in the tab headers when inside an archive to show user-selected encoding.
+The names should be as short as possible:
+2058="Auto|UTF8|ANSI|ASCII|MacOS|Eastern|Cyrillic|Western|Greek|Turk|Hebrew|Arabic|Baltic|Viet|Chinese|Taiwanese|Korean|Thai|DOS-USA|DOS-Latin1|KOI8-R|Japanese|DOS"
+Strings shown when right clicking on [Encoding] in tab headers:
+2059="Auto-Detect"
+2060="UTF-&8"
+New fields for internal "tc" content plugin:
+Note: The 2nd checks whether the file/folder itself is case sensitive. The 3rd checks whether files within the folder are case sensitive. Needs Windows 10 1803 or newer
+2061="path length|case sensitive name|case sensitive in folder|"
+Right click on a directory, drive, or file list background:
+2062="Paste shortcut"
+Right click on a tab when other tabs have been deleted recently:
+2063="Recently closed tabs"
+Multi-rename tool click on "+" button to insert field - new field [S] pastes file size
+2064="Size"
+Configuration - Options - Color - Others:
+2065="Dark Mode:"
+2066="Highlight"
+Errors shown when using tree dialog (Alt+F10):
+2067="'Everything' isn't installed!"
+2068="The installed version of 'Everything' is too old!"
+2069="'Everything' is currently busy!"
+Error shown when trying to copy a file >4GB to a drive formatted with FAT32:
+Note: the \n inserts a line break, and %s the file name.
+2070="The file\n%s\nis larger than 4GB!\n\nThis is too large for the file system on the target drive!"
+Lister title bar for mode '8' (the name of the Windows Explorer, not translated in most languages):
+2071="Explorer"
+F5 copy, click on "Options", then on disk icon button:
+2072="Save the following overwrite action as default?"
+Configuration - Options - Color - Others:
+2073="Hint Windows:"
+2074="Border"
+Configuration - Options - Color: Preview:
+2075="Text"
+2076="Selected"
+2077="Cursor"
+2078="Selected+Cursor"
+Title bar when you press "+" on numeric keypad:
+2079="Specify file type"
+Shown when using restrictinterface=256:
+2080="Plugins are disabled"
+Shown both in Help-About Total Commander (note: the first is plural (2 files), the second singular (one file):
+2081="Settings files:"
+2082="Program file:"
+The following string isn't used yet. It's planned to make some colors configurable separately for
+the main window, so it will look like this: "Background (Main Window)"
+2083="Main Window"
+
+Files - Unpack specific files:
+5468="&Encoding of names:"
+
+Commands - Search, shown after a search starts:
+5681="F2 Search in found files/folders"
+
+Lister - Configuration (the last is for tab headers):
+Preview handlers are used by the Explorer to show a full size preview of the file in a separate panel.
+5872="Use preview handlers from E&xplorer"
+Thumbnail providers are used by the Explorer (and Total Commander) to show mini images directly in the file lists.
+5873="Us&e thumbnail providers"
+5874="Define vie&w method by file type..."
+5875="General\nMultimedia"
+
+Lister  - main menu:
+5948="&8  Explorer Preview"
+
+While showing the contents of a ZIP, right click on [AUTO].
+5974="ASCII/DOS"
+
+Configuration - Options - Display (appends a backslash to folders):
+6139="Append \"
+
+Configuration - Options - Operation (only shows directories in history where the user remained for a while, or started an operation)
+You can add hotkeys to these if you find any free ones, but I didn't find any for English...
+Directory history thinning: Total Commander only shows directories in the history where the user performed an operation like copying or viewing, or where he stayed for at least 10 seconds.
+6169="Directory history thinning"
+Extra lines below cursor: When you scroll with the keyboard through the file lists, it doesn't go to the end of the list. Instead, it starts scrolling x lines before reaching the end, so you can see what lines will come up next.
+6170="Extra lines below cursor:"
+
+Configuration - Options - Color:
+6171="D&ark mode"
+6172="Always disabled\nAlways enabled\nOnly when enabled for Windows 10 apps"
+
+Files - Internal associations:
+6507="&Load extra commands from all matching types"
+
+Configuration - Options - Display - click on "+" button:
+6508="&Show hints from all matching filters"
+6509="Dark<->&Normal"
+
+New in file *.inc file (optional)
+=================================
+below 1003:
+1008="Windows 10 modern share dialog"
+below 490: Separate option for "Layout" page in config dialog, in preparation for cm_Config=last opened page. Will be changed later
+476="Conf: Layout"
+below 572:
+575="History list, unfiltered"
+below 2054:     (for cursor movement)
+2055="Go to next file"
+2056="Go to previous file"
+2057="Go to last file"
+below 3205:
+2948="Show popup menu to change archive name encoding"
+2950="Turn dark mode on and off"
+2951="Turn dark mode on"
+2952="Turn dark mode off"
+below 3006:     (for moving tabs in tab header)
+3015="Move current tab to the left"
+3016="Move current tab to the right"
+
+below -21 (commands with parameters):
+-22="Save selection to file (supports modifiers A and W)"
+-23="Save selection with all details to file (supports modifiers A and W)"
+-24="Load selection from file"

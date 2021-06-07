@@ -1,0 +1,21 @@
+DifRes.exe
+==========
+
+This program allows to compare your translation with the English one.
+To use it, do the following:
+
+1. Start difres.exe
+2. Enter the FULL path to the English file on the first line,
+e.g. c:\translations\wcmd_eng.lng
+3. Enter the full path to your complete translation on the second
+line, e.g. c:\translations\wcmd_you.lng
+4. Click on "Check lng"
+5. After checking the results, click on "Check mnu belonging to
+  this lng" WITHOUT changing the names in the two edit boxes!
+6. If you translated the optional wcmd_eng.inc file, put the file
+  and its translation in the same directory as the lng files, and
+  click on "Check inc belonging to this lng".
+
+The files new*.txt contain the new strings added in the respective
+versions, and an explanation behind //. Please remove this ex-
+planation after translating!

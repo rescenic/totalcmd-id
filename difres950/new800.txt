@@ -1,0 +1,56 @@
+New in wcmd_xyz.lng file:
+
+// This already existing string should be changed from SFV files to checksum files, because it also concerns MD5 and SHA1
+1459="Create separate checksum files for each file"
+// You can add a hotkey to this already existing string, but make sure that it's different from the one for Nr. 1741
+1536="&Also save the target dir"
+
+// These two are shown as tooltips in the Search/Replace section of the multi-rename tool
+1737="Replace only once per file"
+1738="Replace also in file extensions"
+// This message is shown when trying to install a 32-bit plugin in TC 64-bit
+1739="Error!\nThis plugin is 32-bit only, but you are using the 64-bit version of Total Commander. Please look for a 64-bit version of this plugin on www.ghisler.com or other plugin sites!"
+// This message is shown when trying to copy folders like "System Volume Information"
+1740="Could not access %d folder(s):"
+// When adding a directory to the Ctrl+D menu and the user has defined some submenus
+1741="Add to &submenu"
+
+// These strings are used in the menu which appears when pressing the Play/Pause button on
+// a Windows Media Center remote control. This allows to control Total Commander from such
+// a remote control without a keyboard for most simple operations
+// You can open this menu also with the new command cm_ShowRemoteMenu on a button,
+// a user-defined hotkey, or in the command line
+1743="Drive combobox"
+1744="Rename"
+1745="View"
+1746="Edit"
+1747="Copy"
+1748="Move"
+1749="New folder"
+1750="Delete"
+1751="Main menu"
+1752="Tab menu"
+1753="Context menu"
+1754="Properties"
+
+// Configuration - Options - Colors: Other colors
+1760="Title bar for file panels"
+1761="Active side: Text"
+1762="Active side: Background"
+1763="Inactive Side: Text"
+1764="Inactive Side: Background"
+1765="Synchronize directories"
+1766="Selection: Background"
+1767="Text with no differences"
+1768="Text background (no differences)"
+1769="Text background (lines with differences)"
+1770="Selected lines: Text"
+1771="Selected lines: Background"
+
+======================================================================
+New in wcmd_xyz.inc file (optional):
+
+// cm_100Percent
+910="Window separator at 100%"
+// cm_ShowRemoteMenu
+2930="Context menu for Media Center remote control Play/Pause"

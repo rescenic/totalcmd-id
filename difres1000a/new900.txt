@@ -1,0 +1,316 @@
+Alextp <aaa5500@ya.ru>
+> I'm author of Cudatext text editor. It now supports translations
+> and I welcome new lang files. Ini format. Info==
+> http://wiki.freepascal.org/CudaText#How_to_make_translation
+
+New in file *.mnu:
+==================
+after:  MENUITEM "Custom Columns Mo&de\tShift+F1", 270
+add:  MENUITEM "Custom View Modes", 333
+
+after:   MENUITEM "&Button Bar...", cm_ButtonConfig
+add:   MENUITEM "Button Bar &2 (Vertical)...", 583
+
+after:  MENUITEM "&Visit Totalcmd's Web Site", 640
+add:   MENUITEM "&Check for updates now", 650
+
+==========================================================================================
+New in file *.lng:
+==================
+// New view modes and auto-change view mode in Configuration dialog
+700="Directory"
+701="With drive letter"
+702="UNC path: \\Server"
+703="Virtual folder"
+704="FTP connection"
+705="Archive"
+706="File System Plugin"
+707="Search result"
+
+720="Must match"
+721="Must not match"
+722="At least 50% match"
+723="At least one match"
+
+// Shown when there is a rename collision in the multi-rename tool
+1415="Auto-rename to 'name (2).ext', 'name (3).ext' etc."
+
+// Terabytes abbreviation
+1449="T"
+
+// Fields of internal plugin "tc", e.g. in multi-rename tool clicking on plugin button (at the bottom)
+// It converts for example %20 to a space
+1742="decode html characters (text)|decode html characters (utf-8)|decode html characters (utf-16)"
+
+// New view modes and auto-change view mode in Configuration dialog
+1772="Unchanged"
+1773="Add new view mode"
+
+// Multi-rename tool, button "+" opens menu with these entries:
+1774="Parent folder"
+1775="Grandparent folder"
+1776="Name with extension"
+1777="Date (country settings)"
+1778="Time (country settings)"
+1779="All characters after this position in uppercase"
+1780="All characters after this position in lowercase"
+1781="First letter of each word uppercase after this position"
+1782="All characters after this position again as in original name"
+1783="Square bracket: open"
+1784="Square bracket: close"
+1785="Extension"
+1786="Full path+name"
+
+// Multi-rename tool, button "[=?] Plugin" opens new dialog:
+1787="Measure first character from the end"
+1788="Measure last character from the end"
+1789="Use [first,length] instead of [first-last]"
+
+// Menu Help - Search for updates
+1790="An update is available:"
+1791="Visit homepage to download?"
+1792="Total Commander is up to date."
+
+// Shown in progress dialog when unpacking a large ZIP with many subdirs. The dir timestamps are set in a second pass.
+1793="Setting date/time"
+
+// Right click on tab, new menu item:
+1794="Configure view modes"
+
+// Can be shown when browsing certain virtual folders
+1795="Warning: Currently the Explorer is hiding extensions of known file types. This also affects virtual folders in Total Commander."
+1796="Do you want to always show all extensions? This setting works in ALL Windows programs."
+
+// After doing a manual update check which didn't find any updates, while automatic updates are disabled
+1797="Do you want to enable automatic update checks?"
+
+// Will be shown at startup to choose the new icon library
+1798="Set default icon library"
+
+// After doing a manual update check which didn't find any updates, while automatic updates are enabled
+1799="Automatic update checks are enabled. Do you want to DISABLE automatic update checks?"
+
+// Shown in the progress dialog while verifying copied files (F5 - Verify - OK)
+2019="Verifying"
+
+// Click on "+" in search dialog to select plugins
+2020="Text search in plugins"
+2021="Enter a name for this search:"
+// in search dialog, new checkbox to search with content plugins. Will be followed by the chosen plugin search names
+2022="Plugins:"
+// error when defining fields via 2022
+2023="Too many plugin fields! You can either define one field of type 'full text' (shown with '!'), or multiple other fields."
+2024="All plugins"
+// Error unpacking a zip containing file like name.doc.exe
+2025="WARNING: The file name contains characters typical for a virus/worm. Function aborted."
+// right click below vertical bar
+2026="Change vertical button bar..."
+// Used in Configuration - Options - View modes
+2027="Unsorted"
+// Used in Configuration - Options - View modes: Click on "+" for additional sort orders
+2028="Ascending (0..9)"
+2029="Descending (9..0)"
+// Configuration - Options - Operation, different formats of descript.ion files
+2030="Plain text"
+2031="Unicode"
+// Right click on empty space in vertical button bar
+2032="Hide button bar"
+2033="Do you want to hide the vertical button bar? You can always unhide it via right click on the file panel separator."
+// Command with parameter in button bar, use ? as parameter, e.g. cm_select ? -> user will be asked for the value
+2034="Enter value for this command:"
+// Right click on panel separator while vertical button bar is disabled
+2035="Show vertical button bar"
+// Delete files with F8/Del on Windows Vista or newer, VistaDelete=0 is NOT set:
+2036="Do you really want to move the selected file %s to the recycle bin?"
+2037="Do you really want to move the selected directory %s to the recycle bin?"
+2038="Do you really want to move the %i selected files/directories to the recycle bin?"
+2039="Move to recycle bin"
+// Same but Shift+F8/Del
+2040="Permanently delete"
+// Click on new 'Everything' checkbox in search dialog, Everything isn't running
+2041="'Everything' is a search tool and search index for the NTFS file system.\n\n'Everything' isn't installed! Do you want to download it now?"
+// Error when using search in archive - feed to listbox, delete a file, then try to view a file
+2042="Cannot unpack because the archive has changed!"
+// Confimation after clicking on "Delete" buttons in Configuration - Options - View mode and Auto Switch mode. Try to formulate neutrally for list elements in general.
+2043="Do you really want to delete the selected element?"
+// Beta 5: Trying to delete one or more files to recycle bin fails, Windows wants to delete it directly. TC shows this warning:
+2044="At least one file could not be moved to recycle bin!"
+2045="Do you want to delete it and all other files directly?"
+// Configuration - Options - Auto-change view modes: Type "L", local directory, choose drive type:
+2046="USB harddisk\nUSB stick\nHarddisk/SSD\nNetwork drive\nCD/DVD\nRAM disk"
+// Files - Create CRC checksums: Use same string as 1459, just use directory instead of file!
+2047="Create separate checksum files for each &directory"
+// Message shown when trying to access a drive which is locked with Bitlocker
+2048="This drive seems to be locked by Bitlocker! Unlock it?"
+// Same situation, after user clicks on "Yes". It's shown in a wait dialog where TC waits for the bitlocker
+// dialog to show up.
+2049="Please enter the Bitlocker password!"
+
+// Configuration - Options - Folder tabs
+5314="Show &icons on tabs"
+// Configuration - Options - Font
+5315="Dialog box scaling (does not scale the main window)"
+5316="Set dots per inch (DPI) to:"
+
+// Configuration - Options - Icons
+5317="Extra distance: &Horizontal:"
+5318="Vert&ical:"
+
+// Configuration - Options - Colors
+5417="Use Windows &Theme for Cursor"
+// Configuration - Options - Layout
+5418="Show button bar &2 (vertical)"
+
+// Search dialog, second tab, below "Not older than:"
+5645="Older than:"
+
+// Configuration - Options - Operation:
+6156="Rubberband selection"
+
+// Configuration - Options - View mode and Auto Switch Mode
+6157="View mode"
+6158="Auto Switch Mode"
+6159="&Rules"
+6160="&Add..."
+6161="&Delete..."
+6162="Automatically switch &view mode on directory change:"
+6163="Rule:"
+6164="Directory:"
+6165="File types:"
+6166="&More sub-rules"
+6167="&Fewer sub-rules"
+6168="&Set this mode:"
+
+// Configuration - Options - Icons:
+6180="Show default &folder/file icons from Explorer"
+6181="Show '!' on hidden/s&ystem"
+6182="&Dimmed hidden files"
+6183="Show d&rive icons from Explorer"
+
+// Checkbox in Files - Compare by content
+6217="&Show only differences, with extra lines:"
+
+// Dialog to pick plugin fields, e.g. Multi-Rename tool, click on "[=?] Plugins"
+7701="Choose plugin property"
+7702="&Plugins:"
+7703="P&roperties:"
+7704="&Filter"
+
+// Right click on empty space in button bar - Set default icon library
+7720="Icon library"
+7721="Icon library for button bar and main menu:"
+
+// Configuration - Options - Folder Tabs - >>
+7751="Icons on folder tabs"
+7752="Show icons on tabs"
+7753="For &local drives"
+7754="Icons defined via folder &properties"
+7755="For &virtual folders (e.g. Network Neighborhood)"
+7756="For file &system plugins"
+7757="For &FTP connections"
+7758="&User-defined icons (view modes)"
+
+// Configuration - Options - Custom view modes
+7800="View modes"
+7801="&Add..."
+7802="&Delete..."
+7803="&Change title..."
+7804="C&olumns view:"
+7805="&Sort order:"
+7806="D&escending"
+7807="Add&itional sort orders:"
+7808="&Tab color and icon:"
+7809="&Background:"
+7810="Background &2:"
+7811="Auto-run commands:"
+7812="Priority"
+
+Changed strings:
+// 141 is changed to be correct for horizontal and vertial button bar
+141="Do you want to make this button bar permanent?\nIt will then be loaded each time Totalcmd is started."
+// 5263 now supports TBytes and 2 digits after the decimal point
+5263="bytes\nkbytes\ndynamic (x k/M/G)\ndynamic (x.x k/M/G)\ndynamic (x k/M)\ndynamic (x.x k/M)\ndynamic (x k/M/G/T)\ndynamic (x.x k/M/G/T)\ndynamic (x.xx k/M/G)\ndynamic (x.xx k/M/G/T)"
+// Note: There were 4 options added (separated by \n):
+// Nr. 7 and 8 are the same as Nr 3 and 4, but add Terabytes as unit: k/M/G -> k/M/G/T
+// Nr. 9 and 10 are the same as Nr 4 and 8, but with 2 digits instead of one: x.x -> x.xx
+
+==========================================================================================
+New in inc:
+========
+// Note: inc is optional. Do not translate if there is no wcmd_xyz.inc for your language!
+View modes="View Modes"
+133="Left: View mode menu"
+233="Right: View mode menu"
+333="Source: View mode menu"
+421="Target: Custom columns 1"
+422="(user defined columns)"
+423="etc."
+429="etc. until 449"
+
+517="Search in directory under the cursor"
+546="Select group, pre-load extension under cursor"
+547="Unselect group, pre-load extension under cursor"
+583="Conf: Button bar 2 (vertical)"
+650="Check for new versions"
+1006="Lister without plugins/multimedia, single file"  <- changed only
+2049="Place cursor on first folder or file"
+2931="Create+Open new text file"
+2932="Edit file under cursor (Shift ignored)"
+2933="Lister without plugins/multimedia, selected"
+2934="Lister with plugins/multimedia, single file"
+2935="Lister with plugins/multimedia, selected"
+2936="Select file under cursor, go to next"
+2937="Remove selection of file, go to next"
+2938="Reverse selection of file, go to next"
+2939="Conf: View Modes"
+2940="Conf: Auto-switch view modes"
+2941="Separate quick view window"
+2942="Separate quick view, no plugins"
+2943="Show menu 'New' from the context menu separately"
+2944=Show/hide vertical button bar"
+2945="Force reload icons in button bars and main menu"
+2946="Reload file in current quick view"
+2947=Turn automatic view mode switching on/off"
+
+4005="Focus on source file list"
+4006="Focus on target file list"
+4007="Focus on left separate tree"
+4008="Focus on right separate tree"
+4009="Focus on source separate tree"
+4010="Focus on target separate tree"
+
+5510="Set left custom view (for scripting, lparam=view)"
+5511="Set right custom view (for scripting, lparam=view)"
+
+8000="Left: Default view mode (no colors or icons)"
+8001="Left: View mode 1"
+8002="(e.g. for tab and background colors)"
+8003="etc."
+8009="etc. until 8249"
+8250="Right: Default view mode (no colors or icons)"
+8251="Right: View mode 1"
+8252="(e.g. for tab and background colors)"
+8253="etc."
+8259="etc. until 8499"
+8500="Source: Default view mode (no colors or icons)"
+8501="Source: View mode 1"
+8502="(e.g. for tab and background colors)"
+8503="etc."
+8509="etc. until 8749"
+8750="Target: Default view mode (no colors or icons)"
+8751="Target: View mode 1"
+8752="(e.g. for tab and background colors)"
+8753="etc."
+8759="etc. until 8999"
+
+-12="Wait x milliseconds"
+-13="Save tabs to .tab file, active side"
+-14="Save tabs to .tab file, left side"
+-15="Save tabs to .tab file, right side"
+-16="Save tabs to .tab file, both sides (active=first)"
+-17="Save tabs to .tab file, both sides (left=first)"
+-18="Save tabs to .tab file, both sides (right=first)"
+-19="Open specific LNG/MNU file pair from 'language' subdir"
+-20="Load main button bar from file"
+-21="Load vertical button bar from file"
+

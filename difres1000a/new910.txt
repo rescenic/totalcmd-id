@@ -1,0 +1,13 @@
+New in file *.lng:
+==================
+2050="Folder sizes not indexed! You need to enable this function in the settings of the tool 'Everything'."
+5062="Change single button"
+
+Notes:
+====
+
+String 2050 is shown when you check the option 'Everything' in menu Configuration - Options - Operation,
+and the used version of 'Everything' is too old or doesn't have folder indexing activated.
+
+String 5062 is shown when you right click on a button in the button bar, and choose "Change...". It's shown
+in the title instead of string 5061, which is still used when changing the entire bar.

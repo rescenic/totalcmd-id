@@ -1,0 +1,474 @@
+1. In the menu file *.mnu:
+
+"Mark" menu:
+  MENUITEM "Select all with same e&xtension\tAlt Gray +",527
+
+"Mark" menu:
+  MENUITEM SEPARATOR
+  MENUITEM "Cop&y selected names to clipboard", 2017
+  MENUITEM "Copy names with &path to clipboard", 2018
+  MENUITEM "Copy to clipboard with all &details", 2036
+  MENUITEM "Copy to clip&board with path+details", 2037
+  MENUITEM SEPARATOR
+
+"Show" menu:
+  POPUP "Separate Tree\tCtrl+Shift+F8"
+    MENUITEM "&0 (None)", 3200
+    MENUITEM "&1 (One For Both Panels)", 3201
+    MENUITEM "&2 (Two, One For Each Panel)", 3202
+  END_POPUP
+
+2. In the language file *.lng:
+
+// New checkbox in overwrite dialog allows to show/hide thumbnails (preview pictures)
+25="&Thumbnails"
+
+// New checkbox in overwrite dialog allows to show/hide custom fields like the file comment
+26="Custom &fields"
+
+// These two were added to alpha 12:
+// New buttons in copy+delete+makediirectory dialogs
+27="As A&dministrator"
+28="A&ll as Administrator"
+
+// Shown in Network Neighborhood
+1658="Refresh"
+
+// The following two are shown in the file list for directories and symbolic links.
+// Note that a maximum of 10 characters including the <> is allowed! Total Commander will shorten
+// any longer strings! Just keep them untranslated if you don't find a good abbreviation.
+677="<DIR>"
+678="<LNK>"
+
+// This one is shown in the first line of the delete progress dialog in various places
+// instead of string #666, "Delete". It means that a delete operation is currently occuring.
+// In some languages, these strings can be identical.
+679="Deleting:"
+
+// This is the new title of various dialogs where the user is asked whether he wants to
+// delete a file or an item from a configuration list (e.g. a button bar button)
+// Try to use what the Explorer uses when deleting a file, but without the reference to files
+// The Explorer shows "Confirm file delete"
+680="Confirm delete"
+
+
+// The following string has been changed. Total Commander can now create archives > 2GB
+// But because they use a Winzip/Pkzip-win extension incompatible with pkzip 2.04g, they
+// cannot be unpacked by some zip packers, including the one in Windows 2000/XP.
+// Only the string " by some ZIP unpackers" was added. Make sure that the line does not
+// become longer than 255 characters!
+1355="Warning: The total size of all selected files (unpacked) is > 2 GB.\nIf the resulting archive is bigger than 2 GB, it will be unreadable by some ZIP unpackers.\nContinue anyway?"
+
+// The following error message also needs to mention the now supported MD5 files
+1460="Please select only SFV or MD5 files!"
+
+// The following two lines have already been in TC 6.5x. They are now used as follows:
+// 1572: This string is shown in the Configuration - Options in the list at the left, and the header of the section
+// 5380: This string is shown when editing a specific custom columns view
+// Make sure that 1572 isn't too long, so it will fit in the list!
+1572="Custom columns"
+5380="Custom columns"
+
+// New button in copy-overwrite dialog
+1599="More Options &>>"
+1600="Rename existing target file"
+
+// New strings for file save dialog in "compare by contents"
+1601="Both files have been changed!"
+1602="The left file has changed!"
+1603="The right file has changed!"
+// these are the buttons: you have plenty of space, but you must make sure that
+// the button delimiters ";" and "\t" are not modified!
+// Also make sure not to have multiple identical hotkeys in the same line, e.g. &left and &right is OK
+1604="Save &both;Save &left;Save &right\tSave both &as...;Save left as...;Save right as...\t&Don't save;Cancel"
+1605="Save &left;Save left &as...\t&Don't save;Cancel"
+1606="Save &right;Save right &as...\t&Don't save;Cancel"
+1607="The upper file has changed!"
+1608="The lower file has changed!"
+1609="Save &both;Save &upper;Save &lower\tSave both &as...;Save upper as...;Save lower as...\t&Don't save;Cancel"
+1610="Save &upper;Save upper &as...\t&Don't save;Cancel"
+1611="Save &lower;Save lower &as...\t&Don't save;Cancel"
+1612="Save"
+// the following is shown when right-clicking in Sync and choosing "Resync comparison from here"
+1613="You need to select one line in each panel from which recomparison should start!\nThis is useful to compare specific paragraphs not detected by auto-compare."
+
+// the following two hints are shown in the synchronize dialog when synchronizing with FTP for checkboxes mdtm and utc
+1614="Use command MDTM to set the file time of uploaded files."
+1615="Send the file time in universal time (UTC=GMT=Greenwich mean time)."
+
+// New options in copy-overwrite dialog
+1616="Overwrite all older and of the same age"
+1617="Copy all larger files (overwrite smaller)"
+1618="Copy all smaller files (overwrite larger)"
+
+// Options for hotlist button in sync dialog
+1619="Add current directories and settings to list"
+1620="Delete selected entry from list"
+1621="Can only add saved FTP connections!"
+1622="Save sync options (Asymmetric, Subdirs...)"
+1623="Save display options (->, <-, dupes, etc)"
+
+// Configure packer plugin dialog (extensions longer 18 chars crash TC <=6.5x, longer than 15 chars don't work)
+1624="Error, extension too long! Max. 15 characters supported!"
+
+// when trying to enter an archive where the packer plugin cannot be found, or a file system with the same problem
+1625="Error, could not load plugin!"
+
+// in multi-rename tool, click on >> and choose to edit the nnames
+1626="Click OK when you have closed the editor to load the changed names!"
+
+// After editing the names, you get this error if you add or remove a line
+1627="File contains wrong number of lines: %i, should be %i!"
+
+// Until now, ftp and plugin uploads showed the same error as downloads, 1186="Error downloading file!"
+// This was wrong, so uploads now show the following error. Please use the same wording as in string 1186,
+// but for uploads (PC->Server) instead of downloads (Server->PC)
+1628="Error uploading file!"
+
+// Search function, used in search depth dropdown combobox: %d will be replaced by current depth
+1629="%d level(s)"
+
+// Hint for "*" button in synchronize dirs
+1630="Open list of saved sync directories+options"
+
+// Shown after F7 if user specifies name of dir which already existed
+1631="Error: Directory [%s]\ralready exists!\rPlease specify a different name."
+
+// Files - pack, when choosing multi-volume for ZIP and the target is not a removable drive
+1632="Please enter size of each archive in kbytes (1 kbyte=1024 Bytes):"
+
+// When specifying ftps:// or https:// in front of URL
+1633="OpenSSL library not found!\nTo use SSL connections, please download the OpenSSL DLLs from the Internet and put them in the Total Commander directory!"
+
+// Shown in the F5 copy dialog when alwayscopyinbackground=2 is set (causing copy in queue by default)
+1634="Foreground"
+
+// Shown when renaming with Shift+F6, and there is already a directory with this name
+1635="A directory with the name\n%s\nalready exists.\n\nDo you want to move the file/dir to this subdirectory?"
+
+// Shown on Windows 95 when HTML help not installed
+1636="HTML Help not supported! Please download the help file in HLP format from www.ghisler.com."
+
+// Used when defining new user commands em_xyz:
+1637="New command name (em_xyz):"
+1638="Keep copy of existing command"
+1639="Change user command %s"
+
+// When setting of a special attribute fails
+1640="Error setting the following attribute:"
+1641="Continue?"
+
+1642="This plugin does not support custom colums"
+
+// In synchronize dirs, allow user to choose whether he wants to save the paths or not
+1643="&Save paths"
+
+// Configuration - options - Misc: translated hotkeys (will only be shown if different, in the form: Translated (original)
+// Please ONLY translate these if they are translated on your national keyboard!
+// For example, the "Home" key is labeled "Pos1" on the German keyboard.
+1644="INS|DEL|HOME|END|PGUP|PGDN|SPACE|BACK|TAB|+|-|*|/|ENTER|ESC|LEFT|RIGHT|UP|DOWN"
+
+// Press "+" on the numeric keypad, then click on "Define", then on "Save". This new save button
+// is string 1645. Strings 1646 and 7 are shown in the then appearing save dialog
+1645="&Save"
+1646="Save parameters"
+1647="&Template name:"
+
+// The following is used when trying to change directory on a locked tab
+1648="This tab is locked! Open new Tab?"
+
+// These two errors can occur when trying to install a plugin
+1649="Error loading plugin file!\n\nThe plugin probably needs some DLLs missing on your system."
+1650="This is not a valid plugin!\n\nYou can find valid plugin files on www.ghisler.com under section 'Addons'."
+
+// These strings are shown during copying, as a speed indication
+1651="bytes/s"
+1652="kbytes/s"
+
+// This is used in the remaining time display during copying. Should be abbreviations for hours, minutes and seconds
+1653="h|m|s"
+
+// Shown when packing to zip or tar, when collecting all necessary parameters
+1654="Preparing to pack:"
+
+// shown when the user tries to execute a non-existing function, e.g. by giving a numeric value 11111 on a button
+// You can also translate this as "Function does not exist!"
+1655="Function not implemented!"
+
+// This text is shown in the title of the dialog box shown for the internal command cm_OpenAsUser
+1656="Run as"
+
+// This text is shown in the background transfer manager for the speed limit
+// Normally it doesn't need to be translated, only for non-latin character sets (e.g. Russian)
+// Please note that there is only very little space.
+1657="kB/s"
+
+// These strings are for the upcoming version 7.04, to support ZIP and RAR encryption:
+1659="Error unpacking the following file (wrong password?):"
+1660="Please re-enter the password:"
+1661="Please enter the password for unpacking:"
+1662="Please enter the password for packing to the following archive:"
+
+// Logging: These strings will be shown in the log file (created via Configuration - Options - Logging)
+// The first group of strings shows what file operation is being logged
+1800="Program start"
+1801="Program shutdown"
+1802="Copy"
+1803="Move"
+1804="Shortcut"
+1805="NewFolder"
+1806="Delete"
+1807="DeleteFolder"
+1808="Pack"
+1809="Unpack"
+1810="Test"
+1811="NewFile"
+
+// Logging: These are errors shown in the log file, e.g. when copying fails.
+1900="Error:"
+1901="Failed"
+1902="Aborted"
+1903="Skipped"
+1904="Not found"
+1905="Identical"
+1906="Read error"
+1907="Write error"
+1908="Invalid name"
+1909="Packer not found"
+1910="Temp file error"
+1911="Delete failed"
+1912="CRC error"
+1913="No files"
+1914="Too big"
+1915="Too many files"
+1916="Bad parameter(s)"
+1917="Archive bad"
+1918="Not supported"
+1919="Encrypted"
+1920="Module in use"
+1921="File exists"
+
+// This is the options button in the F5 copy dialog. Until now, string Nr. 5930 was abused for this button
+5003="&Options"
+
+// Dialog box Files - Change attributes: make sure to insert these string in the right order!
+5043="Load from &file under cursor"
+
+// Configuration - button bar: Turns off/on XP-style buttons
+5064="XP st&yle"
+
+// Dialog box Files - Change attributes (continued): make sure to insert these strings below string 5085!
+// These are for advanced attrubute changes via plugins
+5090="Change &plugin attributes:"
+5091="Plugin:"
+5092="Property:"
+5093="Value:"
+5094="&More attributes"
+5095="&Less attributes"
+
+// this string was changed from "button bars" to "all bars"
+5117="Windows &XP theme background (menu+all bars)"
+
+// Configuration - operation:
+5146="Directory history"
+5147="Exact &name match:"
+5148="&Beginning (name must start with first typed character)"
+5149="En&ding (last character before a typed dot . must match)"
+
+// Separate Background color for alternating lines:
+5199="Background &2:"
+
+// Changed existing string: two more options (with/without GBytes)
+// make sure to keep the \n strings meaning "new line"
+5263="bytes\nkbytes\ndynamic (x k/M/G)\ndynamic (x.x k/M/G)\ndynamic (x k/M)\ndynamic (x.x k/M)"
+
+// Configuration - Options - FTP:
+5286="Auto-&resume transfer if no data received for:"
+
+// The following is shown in Configuration - Options - Misc.
+// It allows to define an alias command for an internal or user-defined command
+// Example: ls -> cm_list
+// When user types  ls  in the command line and presses ENTER, cm_list will be invoked and Lister opened
+5287="&Alias:"
+
+// The seconds indicator on the FTP and Misc. page (must be only 1-2 characters max.)
+5288="s"
+
+// Configuration - Options - Dir tabs:
+5313="Always show &drive letter in tab title"
+
+// Configuration - Options - Custom columns
+5386="Configure columns for &file system:"
+// General section: For normal file lists. Otherwise a name of a file system plugin is shown here.
+5387="<General>"
+
+// The following string was changed from "Logging" to "Log file". Both are
+// OK, so choose the one which is better in your language (it's the page
+// title of the logging configuration in the config dialog
+5390="Log file"
+
+// The string "(ZIP only)" needs to be removed from this string 
+5491="Encr&ypt"
+
+// Configuration - Options - Logging:
+// Important: String Nr. 5274 (Create a log file) is on the same page,
+// so make sure you don't re-use its hotkey!
+5390="Logging"
+5391="File operation log file"
+5392="Log operations"
+5393="C&opy/Move/Create shortcut"
+5394="&Delete"
+5395="C&reate/Delete folders"
+5396="&Pack/Unpack/Test archives"
+5397="&File system plugins"
+5398="Note: The FTP client can create its own log file"
+
+// New page in config dialog:
+5400="Ignore list"
+5401="&Ignore (don't show) the following files and folders:"
+5402="Add selected names with &full path"
+5403="&Add selected names"
+5404="&Save in:"
+
+// Configuration - Options - Logging:
+// These strings determine what types of events will be logged
+5406="Operation status"
+5407="Log &successful operations"
+5408="Log &errors"
+5409="Log s&kipped files (when choosing skip or skip all)"
+// These strings determine when to start with a new log file: Either every day after midnight, or when a certain size is reached
+5410="Log file rotation:"
+5411="&Never (always log to same log file)"
+5412="Every day &after midnight"
+5413="&When the log file becomes larger than"
+5414="kBytes"
+5415="Keep a &maximum of"
+5416="log file copies"
+
+// Dialog box Files - Pack: String changed because it now also applies to RAR and some plugins
+5490="Create self e&xtracting archive"
+
+// The following was changed a long time ago. Make sure that you have the \nPlugins part
+// otherwise the header of the plugins page will appear in English
+5602="General\nAdvanced\nLoad/Save\nPlugins"
+
+// Search function. \n is replaced by new line (second line in combobox)
+5617="Search in su&bdirectories:"
+5618="All (unlimited depth)\nCurrent dir only"
+
+// Find files: The following string has been there for a while, but was
+// forgotten for the translation
+5619="UTF&8"
+
+// Lister:
+5918="R&eload file"
+5945="Show text c&ursor"
+5946="Fit only &larger images to window"
+5947="C&enter images"
+
+// This string is shown in the main menu of Lister, and also inside that menu as the first menu item
+// It replaces string 4003, which should not have a shortcut any more
+5950="&Help"
+
+// FTP connection details dialog
+6030="Remember contents of all &visited directories (in cache)"
+
+//Configuration - Options: new page "Auto-Refresh"
+6100="Refresh"
+6101="Auto-Refresh when activating the program"
+6102="&No refresh for these drives:"
+6103="&Do not remember these drives on exit:"
+6104="Note: Use a backslash \ for network paths (UNC), / for file system plugins, and a colon : for virtual folders like the desktop."
+6105="Auto-refresh when the file system changes"
+6106="Refresh when files are &created, deleted and renamed"
+6107="Also when &size, date, or attributes change"
+6108="&Put added files at the END of the file list (default: sorted)"
+6109="Don't &react to updates while in the background"
+6110="Update &footer (total number of files)"
+6111="Update &header (free disk space)"
+6112="No refresh for &these drives:"
+
+//Configuration: New "Quick Search" page
+6120="Quick Search"
+
+// Configuration: New items on page "Display"
+6130="Tree"
+6131="Show s&quare brackets [ ] around directories"
+6132="&Limit width of brief view column to:"
+6133="Pixels"
+6134="Sort &method:"
+6135="Alphabetical, considering accents\nStrictly by numeric character code\nNatural sorting: by character code and numbers\nNatural sorting: alphabetical and numbers"
+6136="&Comments from descript.ion/files.bbs"
+6137="Comments from &Explorer (OLE2)"
+6138="User-&defined:"
+
+// Configuration: New "Icons" page
+6140="Icons"
+6141="Sho&w icons for special folders: Normal file system"
+6142="Show icons for special folders: &Virtual folders (e.g. Network)"
+
+// Configuration: New items on page "Operation"
+6145="Always &go to the root of a drive when changing drives"
+6146="Op&en files and directories with a single click"
+6147="&Select only the file name when renaming (not the extension)"
+6148="Auto-comple&te paths"
+6149="Auto-append suggested &name"
+
+// Configuration - icons:
+6150="Icons in main menu"
+6151="Show icons for commands in the &main menu"
+6152="Show &3d frame around icon"
+6153="Show &checked items as pressed buttons instead of checkmarks"
+
+// Compare by contents: Unicode checkbox (was already in TC 6.53)
+6206="&Unicode"
+
+// Compare by contents: Right click menu. Allows to compare different paragraphs than the auto-detect comparison
+6207="&Resync comparison from here"
+// Same menu, allows to paste text from the clipboard
+6208="&Paste here"
+
+// New buttons in "Compare by contents" dialog
+6209="&Edit mode"
+6210="Copy -&>"
+6211="Copy &<-"
+6212="Un&do"
+// New checkbox option, TC will ignore differences like "a b" <-> "a     b"
+6213="&Ignore repeated spaces"
+// New checkbox option, TC will ignore lines which appear very often in the document, e.g. empty lines, "begin" statements in programming languages etc.
+6214="Ignore frequent &lines"
+// Checkbox in "Compare by contents"
+6215="&Binary"
+
+// Synchronize dirs, right click context menu: Added arrows for users with problems to distinguish left and right
+6269="<- Delete left"
+6270="-> Delete right"
+
+// Synchronize dirs, right click context menu: Allows to delete the selected files on both sides
+6281="Delete on both sides"
+
+// Multi-rename tool click on ">>" button to see these two:
+6628="&Load names from file..."
+6629="&Edit names..."
+6630="&Confiugre editor..."
+
+// Dialog box - Custom columns
+6913="&Switch to this view when using this plugin"
+
+// New dialog box to choose internal commands, e.g. in button bar change dialog
+7001="Choose Command"
+7002="&Category:"
+7003="C&ommand:"
+7004="Nr:"
+7005="Description:"
+7006="&Filter:"
+// Command choose dialog: Buttons shown on the pages usercmd.ini and wcmd_lng.ini
+// Which allow to add/edit/delete/rename/copy user-defined commands
+7007="&New..."
+7008="&Edit..."
+7009="&Delete"
+7010="&Rename/Copy..."
+
+// This string is shown after opening a file from inside an archive, where the
+// started program was already running (e.g. a multiple document editor)
+7101="Click on Close when the temporary file can be deleted!"

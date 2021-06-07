@@ -1,0 +1,5 @@
+[plugininstall]
+description=Indonesian language files for Total Commander 10
+type=lng
+file=wcmd_idn.lng
+defaultdir=language

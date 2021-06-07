@@ -1,0 +1,118 @@
+New in file *.lng file
+======================
+// Synchronize dirs: Shown in progress dialog when a search filter is applied to all files
+2084="Applying filter:"
+// Compare by content: Shown in progress dialog when user pressed Ctrl+V. Only shown when pasting a lot of lines
+2085="Pasting lines:"
+// Compare by content: When only showing lines with changes in edit mode, and the user tries to delete a selection spanning over multiple result blocks.
+2086="Operation not permitted! The selection spans over multiple blocks of differences."
+// When double clicking on a wincmd*.key file (only when recognized as a Total Commander key)
+2087="This is a Total Commander key for:\n%s\n\nDo you want to install it?"
+// Options when writing to .bar or .ini file fails:
+2088="Copy it to a directory in your profile"
+2089="Copy all INI files from this directory to a directory in your profile"
+2090="Grant yourself write rights (requires administrator rights)"
+// Synchronize dirs: Click on new button "1x": Title of dialog box
+2091="Search filter"
+// Lister, new internal media player: These are hints for the player buttons
+2092="Jump by"
+2093="Play"
+2094="Pause"
+2095="Slower"
+2096="Faster"
+2097="Single step"
+2098="seconds"
+2099="Mute"
+2100="Playback speed"
+// Commands - Search - Plugins for plugin "tc", last entry in "Propery" column. Find e.g. all jpg files with a raw file in the same directory
+2101="partner file with other extension|ZoneId|HostUrl|ReferrerUrl|"
+// This warning is shown for example when you open Total Commander, then Lister, then Lister configuration, then Total Commander configuration, then try to close Lister configuration
+2102="Cannot close this dialog, because another dialog was opened AFTER this dialog in another Total Commander window.\n\nPlease close that other dialog first! Click OK to switch to it."
+// Shown in context menu, "New" section if the default name for text files is missing
+2103="Text file"
+// Find files, try to find e.g. Cyrillic or Chinese on a Western locale when ANSI and/or ASCII is checked
+2104="'Find text' contains characters which cannot be converted to ANSI/ASCII! Continue anyway?"
+
+// displayed below string 5798 as a hint to tell the user that he can double click on a menu entry to hide/show it (added after beta 9!)
+2105="double click menu item to hide/show it (add/remove the character)"
+
+// Configuration-Options-Folder tabs:
+5319="&Return to locked tab root directory on tab change"
+
+// Configuration-Options-Thumnbails. Warning: Limited space available!
+5359="I&nternal thumbnails from images:"
+
+// Configuration-Options-Font:
+5373="&Automatically adjust dialog boxes to larger fonts"
+
+// Configuration-Options-Folder tabs:
+5374="Save displayed &file types separately for each tab"
+
+// Configuration-Options-Layout:
+5419="R&un command line only when focused"
+
+5798="&Hide menu items starting with this character:"
+
+// F3 Lister-Options-Configure-Player:
+5831="Internal Media Player"
+5832="Use default &system filters"
+5833="&Recommended filters (LAV, ffdshow)"
+5834="&User defined:"
+5835="Source filters:"
+5836="&Add"
+5837="&Remove"
+5838="Decoder filters (audio/video):"
+5839="A&dd"
+5840="R&emove"
+
+// Note: The following line was changed! The \nPlayer part was added. Make sure to NOT change the first two in your translation!
+5875="General\nMultimedia\nPlayer"
+5876="&Old Video for Windows player"
+5877="Do&wnload filters..."
+5878="Additional Ir&fanview/Xnview file types:"
+5879="&Additional multimedia file types:"
+
+// Synchronize dirs - right click menu:
+6285="Edit left\tF4"
+6286="Edit right\tShift+F4"
+6287="Left context menu\tAlt+Cursor down"
+6288="Right context menu\tAlt+Shift+Cursor down"
+6289="Left properties\tAlt+Enter"
+6290="Right properties\tAlt+Shift+Enter"
+
+// Master password dialog:
+7203="&Request again for each new connection"
+7204="&Use Windows Hello to keep password stored"
+
+// Synchronize dirs: Click on new button "1x"
+7901="Search must match:"
+7902="on at least one side\non both sides if present (dupes), or on present side (singles)\non the left side, leave out files only present on the right side\non the left side if present, or on the right side (singles)\non the right side, leave out files only present on the left side\non the right side if present, or on the left side (singles)"
+7903="Hide files which match the criteria"
+
+=========================================================================================
+.inc file (only when translated to your language!)
+Below 2044=  <- please modify strings 2031,2041,2042 and add "with column headers" to them!
+2093="Save all shown columns to file, with column headers"
+2094="Save all shown columns to file, with column headers (ANSI)"
+2095="Save all shown columns to file, with column headers (Unicode)"
+
+Below 2038=  <- please take strings 2036,2037,2038 and add "with column headers" to them, then put them in strings 2090, 2091 and 2092!
+2090="Copy all shown columns, with column headers"
+2091="Copy all columns, with column headers+full path"
+2092="Copy all columns, with column headers+UNC path"
+
+Below 2952=
+2953="Enlarge thumbnails (max 200%)"
+2954="Make thumbnails smaller (min 10%)"
+
+Changed:
+-3="Open tabs from saved .tab file (supports modifiers L and R)"
+-4="Append tabs to existing tabs (supports modifiers L and R)"
+-11="Select files of specified types (supports modifiers D, B, U, L, R, T and S)"
+-23="Save selection with all details to file (supports modifiers A, W and H)"
+
+Append to the very end of the file:
+-25="Load complete list (like search result) from file"
+-26="Pack files from list (supports parameters -m, -o, -c0-3 and 0-9)"
+-27="Change attributes dialog: +f (subfolders), +a/-a +r/-r +h/-h +s/-s +L/+L2 +c +dDate +tTime Plugin_settings"
+

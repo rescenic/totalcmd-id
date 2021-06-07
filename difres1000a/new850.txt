@@ -1,0 +1,140 @@
+New in file *.mnu:
+==================
+
+// Below  MENUITEM "&Search...\tAlt+F7", cm_searchfor
+// add:
+  MENUITEM "Search in separate &process...\tAlt+Shift+F7", 545
+
+New in file *.inc:
+==================
+// Same as 501="Search for", but opens search dialog as a separate program/process. Insert in .inc after 501
+545="Search in separate process"
+
+// Same effect as 2011, but separately for hidden and system files, respectively. Insert in .inc after 2011
+3013="Turn hidden files on and off"
+3014="Turn system files on and off"
+
+New in file *.lng:
+==================
+
+// This string was changed to tell the user what he can enter:
+16="Specify file type, e.g. *.txt, or RegEx with leading '<', like <(a|b)"
+
+// This was changed from "The two files are identical!" to make it more clear that there are 2 separate files with the same content
+1313="The two files have the same content!"
+
+// Shown in menu Files - Create checksums
+1465="Checksum method:"
+
+// This belongs to string Nr. 1518: Configuration - Options - FTP, where to open new connections:
+1523="in the target panel"
+
+// This appears in the error log if a file cannot be copied -> TC will try again at the end, and show it as postponed in the log
+// It can be translated to some longer string, like "Delayed until later", if there is no direct translation
+1922="Postponed"
+
+2001="Computer (drive overview)"
+// Note: please use the term "directory", not "folder", because it links to the real directory!
+2002="My Documents (directory)"
+2003="The following files/folders could not be deleted:"
+2004="Try again?"
+// The following is shown when clicking on a directory name in the status bar of the search dialog:
+2005="Do you want to skip searching in the following directory:"
+// Shown in F5 copy dialog during branch view (Ctrl+B), and after "feed to listbox" from fs plugin
+2006="K&eep relative paths (relative to current directory)"
+
+// Shown on a button after clicking on "Background" in copy progress dialog.
+// Please note that the button is quite small. No hotkeys allowed!
+2007="Foreground"
+
+// This is shown when using the duplicate file finder in the search dialog with search by plugins, and there is an error in the search string
+2008="Error in plugin search string!"
+
+// This is shown when ESC seems to be pressed already at the beginning of a file operation. Using some
+// virtualization programs like Vmware or Virtual PC can have this effect.
+2009="ESC is pressed - operation aborted!\nThe ESC key seems to be stuck - press to release!"
+
+// This is shown in the right click context menu in lister
+2010="Search for selected text with Google"
+
+// Shown in right click menu for option "Resync comparison from here"
+2011="Warning: No UNDO possible before that point!"
+
+// This is shown when using the duplicate file finder, feed to listbox, Num"+", Apply when no folder was selected on the second tab
+2012="No folders selected!"
+
+// This is shown when you view or edit a file from a server (ftp or plugin), change it, and save it for the first time
+2013="Total Commander can re-upload edited files automatically (without confirmation) to the server, as soon as they are saved.\n\nWould you like to enable that function?"
+
+// This is shown when auto-re-upload is enabled, and a partially downloaded file is saved
+2014="Warning: The file %s has been downloaded only partially. Do you still want to re-upload the changed file to the server?"
+
+// Error when trying to unpack certain files from RAR archives which are stored as a reference to another file
+2015="The file %s was stored as a reference to a different file in this archive. It cannot be unpacked separately!"
+
+// In the F5 copy dialog
+2016="&Verify"
+
+// In the system menu of the background transfer manager
+2017="Remember &position"
+
+// Buttons in error dialog when copy verification fails (Verify after copy):
+2018="&Ignore;Ignore &all\tA&bort"
+
+// Shown when asked for a password when packing or unpacking
+5006="&Remember (until program is closed or minimized)"
+
+// Configuration - Options - Display: String 5154 was split into two options and is no longer used. Try using its hotkey for 5195:
+5195="&Show hidden files"
+5196="Show s&ystem files"
+
+// Configuration - Options - Viewer/Editor: If checked, the file will be re-uploaded as soon as it is saved by the editor, without closing it
+5197="&Plugins/FTP: Automatically re-upload changed files"
+
+// Configuration - Options - Copy/Delete:
+5338="&Verify after copy (MD5 checksum)"
+
+// Pack dialog: This option is used together with "pack each file/folder to separate archive"
+5494="Leave out &base directory when packing folders"
+
+// Find files dialog:
+// The following string is unchanged, but the available space is a bit shorter. Make sure that the
+// translation still fits into the available space. It's shown in Alt+F7 Find Files dialog:
+5611="Find files N&OT containing the text"
+// The following string was changed from "Unicode" to "Unicode UTF16" to distinguish from UTF8, which is also Unicode:
+5613="Unicode UTF&16"
+// Make sure to use similar wording as for string 5610, but with ANSI instead of ASCII and Windows instead of DOS
+5637="ANSI-&Charset (Windows)"
+5638="Office xml (docx, xlsx, odt etc)+EPUB"
+// Duplicate file finder on second page of find files dialog:
+5644="same plug&in fields"
+
+// Configuration - Options - Operation: New option to select fils by clicking on their icons:
+6154="By clicking on icon"
+// A tap on the touch screen selects the file, an click with the mouse doesn't
+6155="Only on touchscreen"
+
+// New selection dialog shown after searching for duplicate files (Alt+F7, Ctrl+Tab, Search for duplicate files), Apply, Num"+"
+7601="Select duplicate files"
+7602="Files\nSelect by folder"
+7603="Select by &name/extension:"
+7604="&Remove selection by name/extension:"
+7605="Select by date/&time:"
+7606="Select by file si&ze:"
+7607="&Do not select at least one file in each group:"
+7608="Note: This can remove the selection from previously selected files"
+7609="&Choose folders in which files can be selected:"
+7610="Also select all s&ubfolders (manually and with pattern)"
+7611="Select folders by &pattern:"
+7612="Apply this pattern &only to the direct parent directory"
+7613="&Select"
+7614="&Remove"
+7615="A&ll"
+7616="&None"
+7617="Re&verse"
+7618="&Apply"
+// These four are used to fill dropdown comboboxes. Make sure to separate the individual items with \n
+7619="-----\nAll older files\nAll newer files\nJust the oldest file\nJust the newest file"
+7620="-----\nAll larger than the smallest file\nAll smaller than the largest file\nJust the largest file\nJust the smallest file"
+7621="Newest\nOldest\nLargest\nSmallest\nFirst in group\nLast in group"
+7622="First in group\nLast in group"

@@ -1,0 +1,16 @@
+new900a.txt fixes some bugs in new900.txt (already included there).
+
+Changes to LNG file:
+1798="Set default icon library"
+2033="Do you want to hide the vertical button bar? You can always unhide it via right click on the file panel separator."
+2065 should be 2036
+2039="Move to recycle bin"
+6168="&Set this mode:"
+6217="&Show only differences, with extra lines:"
+
+Additions to LNG file:
+2044="At least one file could not be moved to recycle bin!"
+2045="Do you want to delete it and all other files directly?"
+
+Addition to INC file:
+View modes="View Modes"

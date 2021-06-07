@@ -1,0 +1,69 @@
+New in wcmd_xyz.lng file:
+
+// In dialog shown when clicking on button ">>" in "Synchronize dirs" dialog:
+// title:
+1731="User-defined compare functions by file type"
+// name of compare field of "tc" plugin, followed by name of "Random number" field:
+1732="Compare as text|Random number"
+// shown in overwrite dialog when decoding files from UUE, XXE or MIME
+1733="Auto-rename decoded files"
+// The following is a replacement for string 105: Nr 105 was meant for pack dialog titles,
+// while 1734 will be shown in the right click context menu
+1734="Pack files"
+
+// The string 1308="&Rename" has been split into 3 strings because it is
+// different in some languages:
+// 1308 is used for "Rename" buttons (the text on the button)
+// 1735 is used as the title in all progress dialogs (with percent bar), e.g. "Renaming"
+// 1736 is used as the title of all the dialogs where the user has to enter a new name,
+// e.g. in the dialog which is shown when a target file already exists, and the user clicks on Rename button
+1735="Renaming"
+1736="Rename"
+
+// This string was changed: The text "Use plugins or" was added, because plugins
+// will not be used either if you uncheck this option
+5855="Use plugins or load bitmaps as &graphics at startup"
+
+// FTP connection details dialog: Tab headers (no underlined hotkeys, please!)
+6039="General\nAdvanced"
+// FTP dialog: Support for new command MLSD (machine listing)
+6040="Use MLSD for directory listings (grayed=auto-detect)"
+
+// Checkbox in dialog which appears when clicking on ">>" button in "Synchronize dirs" dialog
+6506="&Use plugin compare functions"
+
+======================================================================
+New in wcmd_xyz.mnu file (main menu):
+
+// The following menu items were changed, because it now supports not only CRC, but also MD5 and SHA1
+// IMPORTANT: Try to keep the hotkey the same as for the old translation!
+  MENUITEM "Create C&hecksum File(s) (CRC32, MD5, SHA1)...", 564
+  MENUITEM "&Verify Checksums (from checksum files)", 565
+
+// The following menu item was changed, because the command prompt (cmd.exe) no longer
+// emulates DOS like command.com does.
+// IMPORTANT: Try to keep the hotkey the same as for the old translation!
+  MENUITEM "Open comman&d prompt window", cm_ExecuteDOS
+
+======================================================================
+New in wcmd_xyz.inc file (optional):
+
+// added after line 2034:
+// new command cm_LeftDirBranchSel: Branch view with only selected files/dirs
+2047="Left: branch view, only selected"
+
+// added after line 2035:
+// new command cm_RightDirBranchSel: Branch view with only selected files/dirs
+2048="Right: branch view, only selected"
+
+// Changed to the same string as in the main menu above:
+511="Open command prompt window"
+
+// added after line 2026:
+// new command cm_DirBranchSel: Branch view with only selected files/dirs
+2046="Show selected files, and all in selected subdirs"
+
+// at the end: Command with parameters to select files_
+-11="Select files of specified types"
+
+

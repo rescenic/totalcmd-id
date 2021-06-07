@@ -1,0 +1,281 @@
+//These strings were added for Total Commander 7.5
+
+// in wcmd_xyz.mnu language file:
+
+  MENUITEM "Interna&l associations (Total Commander only)...", 519
+
+// In the main wcmd_xyz.lng language file:
+
+// Changed from "New directory" because the F7 button uses "New folder" now
+2="New folder (directory)"
+
+// Right click on a button which points to a .bar file (as popup or subbar)
+149="Edit linked button bar..."
+
+// Changed to inform user that the name may also be used by a server type, not only a session
+1212="The name is already used for another session or server type, please choose a different name!"
+
+// Added reference to SHA
+1460="Please select only SFV, MD5 or SHA files!"
+
+// here we add the shortcut
+1541="Close all tabs\tCtrl+Shift+W"
+
+// here we just add the 3 dots
+1581="Configure custom columns..."
+1598="Configure this custom columns view..."
+
+// Shown when trying to copy a file 'xyz' to the other panel where a direcoty named 'xyz' also exists
+// For the translation, use string 1635 and replace 'move' by 'copy'
+1670="A directory with the name\n%s\nalready exists.\n\nDo you want to copy the file/dir to this subdirectory?"
+1671="The target name length (%d) is more than 259 characters!"
+1672="Most programs will not be able to access a file/directory with such a long name!"
+1673="&Keep name;&Abort"
+1674="&Keep name;Keep &all;Abort\t&Skip;Ski&p all"
+1675="Skip all which cannot be opened for reading"
+1676="Copy to all selected folders/links in the target panel"
+1677="Please choose the operation you want to perform:"
+1678="Change &master password...;&Remove encryption (selected)...\t&Protect connections with master password...;&Cancel"
+1679="Protect this connection?"
+1680="Encoding (code page) number:"
+1681="Fatal error! Cannot find AES protection key!\nwcx_ftp.ini is damaged!"
+1682="Please enter the current master password:"
+1683="Please enter the _NEW_ master password:"
+1684="Master Password"
+1685="WRONG PASSWORD!\nPlease try again!"
+1686="Please CONFIRM (re-enter) the master password:"
+1687="This function requires Windows XP or later with AES support,\nor the latest wcmzip32.dll containing AES CBC encryption!"
+1688="Failed to encrypt the password!"
+1689="Failed to decrypt the password!"
+
+1690="Copy these file properties:"
+1691="Copy file properties"
+1692="&Timestamp (date+time)"
+1693="File &attributes"
+1694="NTFS &permissions"
+1695="WARNING!\n\nIf you forget the master password, there will be NO way (not even for us) to get your encrypted passwords!"
+1696="We recommend that you write down the password on a sheet of paper, and store it in a SAFE place, e.g. in your wallet/purse or in a safe.\n\nContinue?"
+1697="Could not get the external IP address of the router!"
+1698="Show as menu"
+
+1699="Additionally, the last part of the name is %d characters long, which is longer than the maximum possible 256 characters!"
+1700="The file name is longer than the maximum possible %d characters and was cut!"
+1701="The file name contains characters ("
+1702="), which are not supported by the target!"
+1703="Would you like to convert these characters to not accented characters and underscores (_)?"
+1704="C&onvert;Convert &all;&Cancel\t&Skip;S&kip all\t&Rename;Rename a&ll"
+1705="The source file contains Unicode characters (even the alternative DOS name), so no access is possible! Continue with next file?"
+1706="Warning: You are trying to pack one or more files with Unicode names from a different codepage!\nMost other ZIP packers like the Explorer cannot unpack such names!"
+1707="&Store these names as UTF-8 Unicode;Store &ALL names as UTF-8 Unicode;Store names with Unicode in e&xtra field;Store names with a&ccents in extra field\tStore &non-Ansi characters as question marks (?);A&bort packing"
+1708="Unfortunately this function doesn't support Unicode characters!"
+1709="Not supported"
+1710="&Skip;Skip &all\tA&bort"
+1711="Please enter a code page number. To add it to the menu, give a menu title, like this: ISO Latin1 (28591)"
+1712="This code page is not installed (Control Panel)!"
+1713="Delete selected encoding..."
+1714="Cannot delete folders with connections, please delete the connections first!"
+// Shown when right clicking on a non-empty directory in synchronize dirs and choosing 'Delete left' or 'Delete right'
+1715="Cannot delete directories which contain files or subdirectories! Please select them for deletion too!"
+1716="Cannot delete directories when option 'empty directories' is disabled!"
+// Title of dialog box when protecting connections with master password, and option to confirm each change was checked
+1717="Change?"
+// Separate string for "Configure" menu item in X64 submenu, opens configuration dialog
+1718="Configure..."
+// Select some folders in connect dialog and try to encrypt them
+1719="Note: Cannot encrypt folders, please select the connections directly!"
+// Select some connections without a password, and try to encrypt them
+1720="%d connection(s) didn't have a password stored. Their selection was removed."
+// Click on "Encrypt" button in FTP connection dialog once a master password has been set
+1721="Remove encryption from all selected connections?"
+// To see this, use the command cm_InternalAssociate on the command line
+1722="Internal Associations"
+1723="This command name (%s) is not allowed!\n\nVerbs must not start or end with spaces or a dot and must not contain the '=' character and Unicode characters."
+1724="This command name (%s) already exists! Do you want to overwrite it?"
+// This is shown in the right click context menu for the default "Open" verb
+1725="Open"
+// This is shown in braces () behind each internal command, e.g. "Open (Internal)"
+1726="Internal"
+1727="Warning: Files packed with strength 10 (LZMA) can not be unpacked by all ZIP unpackers! Continue?"
+// Note that this string was already added earlier, but I didn't send a notification to all translators
+// Shown as a tooltip of a button in password input dialog if Allowhook=1 or 2 in wcx_ftp.ini
+1728="Secure Input (keyboard hook)"
+// You can translate this to something like "Inserting (Drag&Drop)" or so. The English string is kept simple
+// for the case where no translation is present for this string
+1729="drop"
+// This string is only shown with XPMoveMethod=1, when moving a subdirectory from
+// One directory to another directory on the SAME harddisk, AND the target directory
+// has different user rights or a different owner than the source dirtectory.
+// TC will then copy the permissions from the target directory to the copied
+// subdirectory and ALL contained files and directories
+1730="Copying new user rights to all contained files, please WAIT!"
+
+// New section headers shown when clicking on "Options" button in F5 copy dialog
+5004="Overwrite options"
+5005="Advanced options"
+
+// Right click on a button pointing to a button bar, Edit, then click on "Change >>"
+5083="&Edit button bar file >>"
+
+// Button changed in change buttonbar dialog:
+5086="Change &>>"
+// Submenu in change buttonbar dialog:
+5087="Insert &file name..."
+5088="Insert &separator"
+5089="Insert &line break"
+
+// A program with this option will be run under the user name who owns the program
+// and not the user name who startet the program. Example: a system program belongs
+// to user "root" but can be run by everyone to set certain system options
+5096="Set UID on start"
+// A program with this option will be run under the group name who owns the program
+5097="Set GID on start"
+// Used for directories: Files created in that directory can only be deleted by the
+// user who created them. Used e.g. for the /tmp directory
+5098="Sticky bit"
+
+5118="Show clickable &path parts ('breadcrumb bar')"
+5121="Use &right mouse button (as in NC) - context menu after 1 second"
+
+5242="&default (run 'cd %TEMP%' in command line to see directory)"
+
+// The last two substrings of this string are missing in many languages. Make sure
+// To add them, and change the middle two to include Gigabytes!
+5263="bytes\nkbytes\ndynamic (x k/M/G)\ndynamic (x.x k/M/G)\ndynamic (x k/M)\ndynamic (x.x k/M)"
+
+// Combobox in Configuration - Options - ZIP packer
+5268="Pack Unicode names:"
+5269="Ask every time a Unicode name is encountered\nStore Unicode names as UTF-8 (Pkzip 4.5/Winzip 11.2 method)\nAll as UTF-8 if at least one contains Unicode\nAll as UTF-8 if at least one contains non-English characters\nStore Unicode name in extra field (Info-Zip method)\nStore all names containing non-English in extra field\nStore Unicode characters as '?'"
+
+// Checkbox in Configuration - Options - FTP: Allows to set external address of the router
+5289="PORT mode: e&xternal address (IP/DNS/http):"
+
+// The windows key in configuration - options misc.
+5299="Win +"
+
+// Checkbox in Configuration - Options - Copy/Delete
+5337="Use standard copy &method (recommended)"
+
+// New menu in Lister:
+5951="En&coding"
+5952="As configured for current &Font"
+5953="&ANSI (local codepage) (0)"
+5954="A&SCII/DOS (local codepage) (1)"
+5955="&Eastern Europe (1250)"
+5956="&Cyrillic Windows (1251)"
+5957="&Western Latin1 (1252)"
+5958="&Greek (1253)"
+5959="&Turkish (1254)"
+5960="&Hebrew (1255)"
+5961="A&rabic (1256)"
+5962="&Baltic (1257)"
+5963="&Vietnamese (1258)"
+5964="Chinese &Main Land (936)"
+5965="Chi&nese Taiwan (950)"
+5966="&Japanese (932)"
+5967="&Korean (949)"
+5968="Tha&i (874)"
+5969="&DOS-USA (437)"
+5970="DOS-LATIN&1 (850)"
+5971="Cyrillic KOI&8-R (20866)"
+5972="MacOS (2)"
+5973="&Other (enter code page manually)"
+
+// Buttons shown in Ctrl+F FTP connect dialog
+6009="Encr&ypt"
+6010="New &folder"
+
+{Connection details (continued)}
+6035="Encodin&g of file names:"
+6036="Auto-Detect (UTF-8 if possible)\nANSI (local code page)\nASCII/DOS (local code page)\nUTF-8"
+6037="Use maste&r password to protect the password"
+6038="Cha&nge password..."
+
+// Right click in "compare by content"
+6216="&Swap panels"
+
+// Synchronize dirs: If checked, empty directories will be copied/deleted too
+6282="&Empty dirs"
+// Allows to copy JUST the file properties: the date/time stamp, attributes, and NTFS permissions
+6283="Copy file proper&ties -> (left to right)...\tCtrl+Alt+L"
+6284="Copy file pr&operties <- (right to left)...\tCtrl+Alt+R"
+
+// Master password input dialog: Password strength, checkbox to show clear text password
+7201="Strength:"
+7202="Show:"
+
+// Dialog box shown when choosing to password-protect connections
+7301="This function allows to protect certain ftp connections with the current master password."
+7302="Options"
+7303="Protect &selected connections only"
+7304="Protect all currently &unprotected connections"
+7305="Protect &all connections"
+7306="Show &dialog box to confirm each change"
+7307="Encrypt"
+
+7401="Configure context menu shell extensions"
+7402="&Available context menu shell extensions:"
+7403="Exclude &these extensions from the menu:"
+7404="&Exclude"
+7405="&Include"
+
+7501="Choose encoding"
+7502="Left:\n&Ansi (plain text)\n&Unicode (UTF-16)\nUnicode &MacOS\nUTF-&8"
+7503="Right:\nA&nsi (plain text)\nUn&icode (UTF-16)\nUnicode Ma&cOS\nUT&F-8"
+
+
+Make sure there are hotkeys for the following string numbers.
+They are all used in the F5 copy dialog:
+1342
+1410
+1530
+1531
+1532
+1533
+1534
+1548
+1549
+1617
+1618
+1675
+1676
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// In the file wcmd_xyz.inc include file:
+
+132="Left: Put focus on path"
+232="Right: Put focus on path"
+332="Source: Put focus on path"
+
+307="Source: Quick view panel off"
+107="Left: Quick view panel off"
+207="Right: Quick view panel off"
+
+// Note: make sure you use the SAME text as for string 2031, and just append (ANSI) and (Unicode), respectively
+2041="Save file selection to file (ANSI)"
+2042="Save file selection to file (Unicode)"
+
+// Note: make sure you use the SAME text as for string 2039, and just append (ANSI) and (Unicode), respectively
+2043="Save all shown columns to file (ANSI)"
+2044="Save all shown columns to file (Unicode)"
+
+
+2926="Show/hide Breadcrumb bar"
+
+519="Define internal associations"
+
+2927="Show context menu for internal associations"
+2928="Internal context menu for file under cursor"
+
+// add under 4003:
+4004="Focus on button bar"
+// add under 2924:
+2925="64-bit Windows: Redirect 32-bit system32 dir off/on"
+// add under 5508:
+5512="Load on demand fields for all files"
+5513="Load on demand fields for selected files"
+5514="Stop loading fields in background"
+
+-8="Open specified button bar file"
+-9="Open stored multi-rename operation"
+-10="Switch to custom columns view"
+

@@ -1,0 +1,24 @@
+new900b.txt adds some strings to new900.txt (already included there).
+
+Additions to LNG file:
+// Configuration - Options - Auto-change view modes: Type "L", local directory, choose drive type:
+2046="USB harddisk\nUSB stick\nHarddisk/SSD\nNetwork drive\nCD/DVD\nRAM disk"
+// Files - Create CRC checksums: Use same string as 1459, just use directory instead of file!
+2047="Create separate checksum files for each &directory"
+// Message shown when trying to access a drive which is locked with Bitlocker
+2048="This drive seems to be locked by Bitlocker! Unlock it?"
+// Same situation, after user clicks on "Yes". It's shown in a wait dialog where TC waits for the bitlocker
+// dialog to show up.
+2049="Please enter the Bitlocker password!"
+
+// Optional: Only shown on Windows 10 in Files - Associate with:
+5029="&Replace with:"
+
+// Configuration - Options - Icons:
+6180="Show default &folder/file icons from Explorer"
+6181="Show '!' on hidden/s&ystem"
+6182="&Dimmed hidden files"
+6183="Show d&rive icons from Explorer"
+
+// Configuration - Options - Custom view modes: when the icon takes priority over all other tab icons:
+7812="Priority"
